@@ -1,0 +1,74 @@
+
+#scene{
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+}
+
+img{
+	position: absolute;
+	/* width: 400px; */
+}
+
+.profile-wrapper{
+	width: 89vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: -488px;
+}
+
+.animate-profile{
+	animation: reset 2s ease-in-out forwards;
+}
+
+@keyframes reset{
+	from{
+
+	},
+	to{
+		transform: translate3d(0px, 0px, 0px)
+	}
+}
+
+#comp1{
+	top: 107px;
+	left: 212px;
+}
+#comp2{
+	top: 104px;
+	left: 212px;
+	/* display: none; */
+}
+#comp3{
+	top: 104px;
+	left: 239px;
+	/* display: none; */
+}
+#comp4{
+	top: 98px;
+	left: 240px;
+	/* display: none; */
+}
+#comp5{
+	top: 104px;
+	left: 249px;
+	/* display: none; */
+}
+#comp6{
+	top: 114px;
+	left: 352px;
+	/* display: none; */
+}
+#comp7{
+	top: 108px;
+	left: 408px;
+}
+#comp8{
+	top: 103px;
+	left: 488px;
+}
+#comp9{
+	top: 216px;
+	left: 149px;
+}
