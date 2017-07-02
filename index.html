@@ -3,6 +3,8 @@
 <head>
 	<title></title>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,20 +14,33 @@
 </head>
 <body>
 
-<!-- <h1> I am Hayes</h1> -->
-<div class="profile-wrapper">
-	<div id="scene" data-hover-only="true">
-		<div class="layer1" data-depth="0.10"><img id="comp1" src="./images/composite-1.png"></div>
-		<div class="layer1" data-depth="0.20"><img id="comp2" src="./images/composite-2.png"></div>
-		<div class="layer1" data-depth="0.30"><img id="comp3" src="./images/composite-3.png"></div>
-		<div class="layer1" data-depth="0.40"><img id="comp4" src="./images/composite-4.png"></div>
-		<div class="layer1" data-depth="0.50"><img id="comp5" src="./images/composite-5.png"></div>
-		<div class="layer1" data-depth="0.60"><img id="comp6" src="./images/composite-6.png"></div>
-		<div class="layer1" data-depth="0.70"><img id="comp7" src="./images/composite-7.png"></div>
-		<div class="layer1" data-depth="0.90"><img id="comp8" src="./images/composite-8.png"></div>
-		<div class="layer1" data-depth="1.00"><img id="comp9" src="./images/composite-9.png"></div>
+	<div class="profile-wrapper hidden-xs">
+		<div id="scene" data-hover-only="true">
+			<div class="layer1" data-depth="0.10"><img id="comp1" src="./images/composite-1.png"></div>
+			<div class="layer1" data-depth="0.10"><img id="comp2" src="./images/composite-2.png"></div>
+			<div class="layer1" data-depth="0.10"><img id="comp3" src="./images/composite-3.png"></div>
+			<div class="layer1" data-depth="0.50"><img id="comp4" src="./images/composite-4.png"></div>
+			<div class="layer1" data-depth="0.50"><img id="comp5" src="./images/composite-5.png"></div>
+			<div class="layer1" data-depth="0.50"><img id="comp6" src="./images/composite-6.png"></div>
+			<div class="layer1" data-depth="0.90"><img id="comp7" src="./images/composite-7.png"></div>
+			<div class="layer1" data-depth="0.90"><img id="comp8" src="./images/composite-8.png"></div>
+			<div class="layer1" data-depth="1.00"><img id="comp9" src="./images/composite-9.png"></div>
+		</div>
+	</div>
+
+<div class="name-wrapper col-sm-6 col-sm-offset-4">
+	<img src="images/name.png">
+	<div class='project-nav-wrapper col-sm-2'>
+		<div id="project-nav">ROJECTS</div>
+	</div>
+	<div class='contact-nav-wrapper col-sm-2'>
+		<div id="contact-nav">ONTACT</div>
+	</div>
+	<div class='about-nav-wrapper col-sm-2'>
+		<div id="about-nav">BOUT</div>
 	</div>
 </div>
+
 
 </body>
 </html>

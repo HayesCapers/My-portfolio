@@ -16,7 +16,7 @@ $(document).ready(()=>{
 			clipRelativeInput: true,
 			// hoverOnly: true,
 			inputElement: $('scene'),
-			scalarX: 15,
+			scalarX: 10,
 			scalarY: 10,
 			frictionX: 1,
 			frictionY: 0,
@@ -26,8 +26,8 @@ $(document).ready(()=>{
 	}, function(){
 		// console.log('off')
 		$('.layer1').removeClass('layer');
-		$('.layer1').addClass('animate-profile')
-		$('.layer1').css("transform", "translate3d(0px, 0px, 0px)", "transition", "5s");
+		// $('.layer1').addClass('animate-profile')
+		// $('.layer1').css("transform", "translate3d(0px, 0px, 0px)", "transition", "5s");
 		// $('.layer1').removeAttr('style');
 	});
 
