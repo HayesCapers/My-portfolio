@@ -1,15 +1,22 @@
 
 $(document).ready(()=>{
 
-	console.log(window)
+	var htmlBars = ''
+	for (let i = 0; i < 100; i++){
+		var randomWidth = Math.floor(Math.random() * 400 + 10);
+		var randomHeight = Math.floor(Math.random() * 15 + 5);
+		htmlBars += `<div class='bar' id='bar-${i}' style='width: ${randomWidth}px; height: 1px;'></div>`
+	}
+	$('.background-wrapper').html(htmlBars);
+
 
 	$('.profile-wrapper').hover(function() {
 		$('profile-wrapper').on('mousemove', function(event){
 			console.log(event)
 		})
 		console.log('things are happening')
-		$('.layer1').removeClass('animate-profile');
-		$('.layer1').addClass('layer');
+		// $('.layer1').removeClass('animate-profile');
+		// $('.layer1').addClass('layer');
 		var scene = $('#scene').get(0);
 		var parallax = new Parallax(scene, {
 			relativeInput: true,
@@ -25,12 +32,34 @@ $(document).ready(()=>{
 		});
 	}, function(){
 		// console.log('off')
-		$('.layer1').removeClass('layer');
+		// $('.layer1').removeClass('layer');
 		// $('.layer1').addClass('animate-profile')
 		// $('.layer1').css("transform", "translate3d(0px, 0px, 0px)", "transition", "5s");
 		// $('.layer1').removeAttr('style');
 	});
 
+	$('#contact-nav-wrapper').hover(()=>{
+		// $('#contact-nav-wrapper').toggleClass('underline-element');
+		// $('#c-power').toggleClass('underline-element');
+		$('#roje-power').toggleClass('hide-element');
+		$('#ts-power').toggleClass('hide-element');
+		$('#about-nav').toggleClass('hide-element');
+	});
+
+	$('#about-nav-wrapper').hover(()=>{
+		$('#ont-power').toggleClass('hide-element');
+		$('#ct-power').toggleClass('hide-element');
+		$('#roje-power').toggleClass('hide-element');
+		$('#c-power').toggleClass('hide-element');
+		$('#ts-power').toggleClass('hide-element');
+	});
+
+	$('#project-nav-wrapper').hover(()=>{
+		$('#ont-power').toggleClass('hide-element');
+		$('#ct-power').toggleClass('hide-element');
+		$('#a-power').toggleClass('hide-element');
+		$('#about-nav').toggleClass('hide-element');
+	});
 	
 
 	// var scene = $('#scene').get(0);

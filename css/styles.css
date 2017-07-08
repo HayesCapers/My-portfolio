@@ -4,6 +4,26 @@
 	src: url('../fonts/Neurotica.ttf');
 }
 
+body{
+	/* background-color: #01F3FE; */
+}
+
+.background-wrapper{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 1225px;
+	/* background-image: url('../images/background.png'); */
+	background-size: cover;
+	overflow: hidden
+}
+
+.bar{
+	background-color: #6567B4;
+	margin-top: 40px;
+}
+
 #scene{
 	width: 1225px;
 	height: 100vh;
@@ -118,67 +138,95 @@ img{
 	}
 }
 
-.project-nav-wrapper,.about-nav-wrapper{
+#project-nav-wrapper,#about-nav-wrapper{
 	position: relative;
-	height: 200px;
+	height: 50%;
 	width: 25px;
 	margin-right: 0px;
 	margin-left: 0px;
 	padding: 0px;
 	z-index: 5;
+	transition: transform 1s ease-in-out;
 }
 
-#project-nav,#about-nav{
+.project-nav,#about-nav{
 	font-family: Neurotica;
 	font-size: 22px;
 	color: #AAA;
-	transition: letter-spacing 1s ease-in-out, transform 1s ease-in-out;
+	transition: letter-spacing 1s ease-in-out, transform 1s ease-in-out, opacity 1s ease;
 	cursor: default;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	z-index: 5;
 }
 
-.project-nav-wrapper{
+#project-nav-wrapper{
 	top: 215px;
 	left: 255px;
 }
 
-.about-nav-wrapper{
+#about-nav-wrapper{
 	top: 329px;
-	left: 104px
+	left: 103px
 }
 
-#project-nav:hover,#about-nav:hover{
+#project-nav-wrapper:hover,#about-nav:hover{
 	letter-spacing: 25px;
 	transform: translate(0px, 25px);
 }
 
-.contact-nav-wrapper{
-	position: relative;
-	top: 303px;
-	left: 255px;
-	height: 25px;
-	width: 200px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding: 0px;
-	z-index: 5;
+.hide-element{
+	transition: opacity 1s ease;
+	opacity: 0;
 }
 
-#contact-nav{
+#contact-nav-wrapper{
+	position: relative;
+	top: 303px;
+	left: 235px;
+	height: 25px;
+	width: 200px;
+	padding-left: 20px;
+	padding-right: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	/* padding: 0px; */
+	z-index: 5;
+	transition: letter-spacing 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.contact-nav{
 	font-family: Neurotica;
+	display: inline-block;
 	font-size: 22px;
 	color: #AAA;
 	letter-spacing: 5px;
-	transition: letter-spacing 1s ease-in-out, transform 1s ease-in-out;
 	cursor: default;
 	z-index: 5;
+	transition: letter-spacing 1s ease-in-out, transform 1s ease-in-out, opacity 1s ease;
 }
 
-#contact-nav:hover{
-	letter-spacing: 25px;
-	transform: translate(25px, 0px);
+#a-power{
+	width: 14.42px;
+}
+
+#ont-power{
+	width: 51.38px;
+}
+
+#contact-nav-wrapper:hover > .contact-nav{
+	letter-spacing: 2vw;
+	transform: translate(2vw, 0px);
+}
+
+#contact-nav-wrapper:hover > #a-power{
+	letter-spacing: 2vw;
+	transform: translate(7vw, 0px);
+}
+
+#contact-nav-wrapper:hover > #ct-power{
+	letter-spacing: 2vw;
+	transform: translate(9vw, 0px);
 }
 
 

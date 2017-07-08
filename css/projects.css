@@ -1,0 +1,29 @@
+
+
+@font-face{
+	font-family: Neurotica;
+	src: url('../fonts/Neurotica.ttf');
+}
+
+.home-nav-wrapper{
+	width: 100vw;
+	height: 60px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: center
+}
+
+#home-nav{
+	line-height: 60px;
+	font-size: 25px;
+	font-family: Neurotica;
+	color: #AAA;
+	letter-spacing: 10px;
+	cursor: default;
+	transition: letter-spacing 1s ease-in-out;
+}
+
+#home-nav:hover{
+	letter-spacing: 15vw;
+}
