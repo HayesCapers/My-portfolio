@@ -1,13 +1,13 @@
 
 $(document).ready(()=>{
 
-	var htmlBars = ''
-	for (let i = 0; i < 100; i++){
-		var randomWidth = Math.floor(Math.random() * 400 + 10);
-		var randomHeight = Math.floor(Math.random() * 15 + 5);
-		htmlBars += `<div class='bar' id='bar-${i}' style='width: ${randomWidth}px; height: 1px;'></div>`
-	}
-	$('.background-wrapper').html(htmlBars);
+	// var htmlBars = ''
+	// for (let i = 0; i < 100; i++){
+	// 	var randomWidth = Math.floor(Math.random() * 300 + 200);
+	// 	var randomHeight = Math.floor(Math.random() * 15 + 5);
+	// 	htmlBars += `<div class='bar' id='bar-${i}' style='width: ${randomWidth}px; height: ${randomHeight}px;'></div>`
+	// }
+	// $('.background-wrapper').html(htmlBars);
 
 
 	$('.profile-wrapper').hover(function() {

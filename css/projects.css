@@ -5,6 +5,99 @@
 	src: url('../fonts/Neurotica.ttf');
 }
 
+body{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden
+}
+
+.main-wrapper{
+	margin-top: 20%;
+	height: 332px;
+}
+
+.wnd-main img{
+	width: 600px;
+	position: absolute;
+}
+
+#wnd-1 img{
+	clip-path: inset(0 20% 30% 0);	
+	top: 0px;
+	left: 0px
+}
+#wnd-2 img{
+	clip-path: inset(0 0 50% 80%);
+	top: 67px;
+	left: -1px;
+}
+
+#wnd-3 img{
+	clip-path: inset(50% 0 0 80%);
+	top: 65px;
+	left: -82px;	
+}
+
+#wnd-4 img{
+	clip-path: inset(70% 20% 0 0);
+	top: -1px;
+	left: -81px;
+}
+
+.img-2-in{
+	animation: shift-side .3s ease forwards;
+}
+.img-3-in{
+	animation: shift-bottom-2 .3s ease forwards;
+}
+.img-4-in{
+	animation: shift-bottom .15s ease forwards;
+}
+
+.img-2-out{
+	animation: shift-side-out .15s ease forwards;
+}
+.img-3-out{
+	animation: shift-bottom-2-out .3s ease forwards;
+}
+.img-4-out{
+	animation: shift-bottom-out .3s ease forwards;
+}
+
+@keyframes shift-bottom{
+	from {left: -81px;}
+	to {left: 0px;}
+}
+
+@keyframes shift-bottom-out{
+	0% {left: 0px;}
+	50% {left: 0px;}
+	100% {left: -81px;}
+}
+
+@keyframes shift-bottom-2{
+	0% {left: -82px; top: 65px;}
+	50% {left: -1px; top: 65px;}
+	100% {left: -1px; top: -1px;}
+}
+
+@keyframes shift-bottom-2-out{
+	0% {left: -1px; top: -1px;}
+	50% {left: -1px; top: 65px;}
+	100% {left: -82px; top: 65px;}
+}
+
+@keyframes shift-side{
+	0% {top: 67px;}
+	50% {top: 67px;}
+	100% {top: 0px;}
+}
+
+@keyframes shift-side-out{
+	0% {top: 0px;}
+	100% {top: 67px;}
+}
+
 .home-nav-wrapper{
 	width: 100vw;
 	height: 60px;
