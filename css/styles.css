@@ -4,8 +4,9 @@
 	src: url('../fonts/Neurotica.ttf');
 }
 
-body{
-	/* background-color: #01F3FE; */
+.landing-page{
+	height: 100vh;
+	width: 100vw
 }
 
 .icon-wrapper{
